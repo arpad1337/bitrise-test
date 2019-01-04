@@ -8,7 +8,7 @@ export class PublicPlan extends Plan {
   buildsPerMonth = Number.POSITIVE_INFINITY;
   teamMembers = Number.POSITIVE_INFINITY;
 
-  clone() {
+  clone(): PublicPlan {
     const plan = new PublicPlan();
     plan.setLimits(this.concurrentBuildNumber, this.buildsPerMonth, this.maxBuildTime, this.teamMembers);
     return plan;

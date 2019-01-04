@@ -49,7 +49,7 @@ export class Program {
     console.log("Throwing expection on Uknown plan");
     try {
       UserFactory.createUserWithPlan('test','uknown');
-      console.log('No error');
+      console.error('No error');
     } catch(e) {
       console.log('Error thrown:', e.message);
     }
@@ -103,7 +103,7 @@ export class Program {
         ...app2.limits,
         concurrentBuildNumber: 10
       };
-      console.log('No error');
+      console.error('No error');
     } catch(e) {
       console.log('Error thrown:', e.message);
     }

@@ -8,7 +8,7 @@ export class DeveloperPlan extends Plan {
   buildsPerMonth = Number.POSITIVE_INFINITY;
   teamMembers = Number.POSITIVE_INFINITY;
 
-  clone(): Plan {
+  clone(): DeveloperPlan {
     return new DeveloperPlan();
   }
 }

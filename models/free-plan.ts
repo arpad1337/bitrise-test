@@ -8,7 +8,7 @@ export class FreePlan extends Plan {
   buildsPerMonth = 200;
   teamMembers = 2;
 
-  clone(): Plan {
+  clone(): FreePlan {
     return new FreePlan();
   }
 }
