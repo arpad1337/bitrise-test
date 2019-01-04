@@ -46,7 +46,7 @@ export class Program {
       console.log(UserFactory.createUserWithPlan('username#' + i, planName).toJSON());
     });
 
-    console.log("Throwing expection on Uknown plan");
+    console.log("Throwing exeption on Uknown plan");
     try {
       UserFactory.createUserWithPlan('test','uknown');
       console.error('No error');
